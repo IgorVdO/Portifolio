@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Oliveira - Portifólio</title>
+    <link rel="icon" href="./assets/logoPNG.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#inicio"><img src="./assets/logoPNG.png" height="100px" width="100px"></a>
+        <nav id="nav">
+            <ul id="menu">
+                <li><a href="#inicio" onclick="clickLink()">início</a></li>
+                <li><a href="#sobre" onclick="clickLink()">sobre</a></li>
+                <li><a href="#habilidades" onclick="clickLink()">habilidades</a></li>
+                <li><a href="#projetos" onclick="clickLink()">projetos</a></li>
+                <li><a href="#contato" onclick="clickLink()">contato</a></li>
+            </ul>
+            <button id="hamburger" onclick="hamburgerClick()">
+                <span class="spanHamburger" id="spanHamburger1"></span>
+                <span class="spanHamburger" id="spanHamburger2"></span>
+                <span class="spanHamburger" id="spanHamburger3"></span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div id="txtInicio">
+            <h1>Olá, eu sou o <br>
+            <strong>Igor Oliveira</strong> <br>
+            dev front-end
+            </h1>
+            <button id="github">GitHub</button>
+            <button id="linkedin">Linkedin</button>
+            <button id="instagram">Instagram</button>
+        </div>
+        <img src="./assets/igorPNG.png" id="igorIMG">
+    </section>
+
+    <section id="sobre">
+        <div id="boxSobre">
+            <h2>SOBRE</h2>
+            <p>Olá, eu sou o Igor, tenho <strong class="textoDestaque">15 anos</strong> e faço <strong class="textoDestaque">curso técnico</strong> com ensino médio na ETEC de <strong class="textoDestaque">desenvolvimento de sistemas</strong>, venho também fazendo cursos no YouTube de <strong class="textoDestaque">desenvolvimento para a web</strong> e pretendo seguir minha carreira nesta área. </p>
+        </div>
+        <div id="imgBox">
+            <div id="caixaGiratoria">
+                <img src="./assets/logoPNG.png" id="imgSobre">
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h1>HABILIDADES</h1>
+        <div id="logosHabilidades">
+            <img src="./assets/htmlLogo.png" class="logoTecnologia" onclick="clickHtml()">
+            <img src="./assets/cssLogo.png" class="logoTecnologia" onclick="clickCss()">
+            <img src="./assets/jsLogo.png" class="logoTecnologia" onclick="clickJs()">
+        </div>
+        <div id="descTecnologia"><strong class="textoDestaque" id="descTitle">clique na linguagem para saber mais!</strong>
+            <p id="descP"></p>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h1>PROJETOS</h1>
+        <div id="boxProjetos">
+            <div class="projeto">TRABALHANDO NISSO</div>
+            <div class="projeto">EM OBRA</div>
+            <div class="projeto">PRONTO EM BREVE</div>
+            <div class="projeto">RESTRITO</div>
+            <div class="projeto">INDISPONIVEL</div>
+            <div class="projeto">RESOLVENDO PROBLEMAS</div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h1>QUER INFORMATIZAR O SEU PROJETO?</h1>
+        <p><strong>CONTATO:</strong> igor.oliveira2210@gmail.com</p>
+    </section>
+
+<script src="./script.js"></script>
+</body>
+</html>
